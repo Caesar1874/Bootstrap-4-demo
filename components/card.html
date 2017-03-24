@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+<br><br><br>
+
+
+<!--card-->
+<!--
+.card
+    .card-header
+    .card-img
+    .card-block
+        .card-title
+        .card-subtitle
+        .card-text
+        .card-blockquote
+        .card-link
+    .card-footer
+-->
+    <div class="card card-primary card-inverse">
+        <div class="card-header">card header</div>
+        <img src="../images/media.PNG" alt="" class="card-img">
+        <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <h5 class="card-subtitle text-muted">card subtitle</h5>
+            <p class="card-text">
+                card text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur, deserunt dicta modi sapiente ut!
+            </p>
+            <blockquote class="card-blockquote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at ducimus illo provident reprehenderit sequi!
+                <footer>someone famous in <cite>Source totle</cite></footer>
+            </blockquote>
+            <a href="#" class="card-link">card link</a>
+        </div>
+        <div class="card-footer">card fooer</div>
+    </div>
+
+<!--card-img-overlay-->
+    <div class="card card-inverse">
+        <img src="../images/slide1.jpg" alt="" class="card-img" width="700px" height="200px">
+        <div class="card-img-overlay">
+            <h4 class="card-title">card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, omnis?
+            </p>
+        </div>
+    </div>
+
+<!--card-group-->
+    <div class="card-group">
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+                </p>
+            </div>
+        </div>
+    </div>
+<br>
+<!--card-deck-->
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<!--card-columns-->
+<div class="card-columns">
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+            </p>
+        </div>
+    </div>
+</div>
+
+<br>
+<!--没有图片时.card.card-block-->
+    <div class="card card-block">
+        <h4 class="card-title">card title</h4>
+        <p class="card-text">
+            card text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, molestiae.
+        </p>
+        <a href="#" class="card-link">card link</a>
+        <div class="card-footer">card footer</div>
+    </div>
+
+<!--card header 和 card footer-->
+    <div class="card">
+        <div class="card-header">card header</div>
+        <div class="card-block">
+            <h4 class="card-title">card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores excepturi fuga nihil pariatur quidem sed voluptatibus. Aliquam, amet facere fuga labore necessitatibus nemo tempore?</p>
+        </div>
+        <div class="card-footer">card footer</div>
+    </div>
+
+<!--card样式-->
+<!--背景：card-primary-->
+<!--文本： card-inverse-->
+    <!--card-inverse使其子元素color: #fff;-->
+<div class="card card-inverse card-primary">
+    <div class="card-block">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloribus ipsam laborum officiis porro repudiandae.</p>
+    </div>
+</div>
+
+<!--card-outline-primary-->
+<div class="card card-outline-primary">
+    <div class="card-block">
+        <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum inventore iure soluta voluptatem voluptatum!
+        </p>
+    </div>
+</div>
+
+
+<!--card-image-overlay-->
+    <!--card默认使用深色文本，使用深色背景时应添加card-inverse将文本转换为浅色-->
+<div class="card card-inverse">
+    <img src="media.PNG" alt="" class="card-image" width="100%" height="100">
+    <div class="card-img-overlay">
+        <h4 class="card-title">card title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolores dolorum molestias quo saepe voluptate!</p>
+    </div>
+</div>
+
+<!--card-group-->
+<div class="card-group">
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--card-deck-->
+<div class="card-deck-wrapper">
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--card-columns-->
+<div class="card-columns">
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, qui.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, voluptatum?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, exercitationem!
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="http://cdn.bootcss.com/tether/1.3.7/js/tether.min.js"></script>
+<!--导入bootstrap.js-->
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+</body>
+</html>

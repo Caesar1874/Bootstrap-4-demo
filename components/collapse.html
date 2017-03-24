@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!--collapse 的结构-->
+<!--
+    .btn[data-toggle=collapse][data-target=#collapseTarget]
+    collapse.#collapseTarget
+-->
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTarget">collapse button</button>
+    <div class="collapse" id="collapseTarget">
+        <div class="card card-block">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, blanditiis debitis facilis porro provident quis saepe sed sunt tempore temporibus.
+        </div>
+    </div>
+
+<br><br>
+
+
+
+<!--a 作为collapse按钮-->
+    <!-- href="#collapseTarget" -->
+    <!--.collapse.in: 显示内容-->
+    <a href="#collapseTargetTwo" class="btn btn-primary" data-toggle="collapse">Link with href</a>
+    <div class="collapse in" id="collapseTargetTwo">
+        <div class="card card-block">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi est id iusto minus. Corporis delectus dicta dolor dolores eligendi esse fugiat ipsum laudantium nemo, nihil nostrum, ratione repellat veritatis.
+        </div>
+    </div>
+
+<!--.collapsing: 变换过程-->
+
+
+<!--accordion-->
+<div id="accordion">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <a href="#collapseOne" data-toggle="collapse">Collapse group #1</a>
+            </h5>
+        </div>
+        <div id="collapseOne" class="collapse in">
+            <div class="card-block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur consequuntur, et explicabo fugiat nobis quae recusandae reprehenderit sequi tempore!
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <a href="#collapseTwo" data-toggle="collapse">Collapse group #2</a>
+            </h5>
+        </div>
+        <div class="collapse" id="collapseTwo">
+            <div class="card-block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt eius esse fugiat? Animi facere fugiat ipsam labore quo quos?
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">
+                <a href="#collapseThree" data-toggle="collapse">Collapse group #3</a>
+            </h5>
+        </div>
+        <div class="collapse" id="collapseThree">
+            <div class="card-block">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi at atque blanditiis consectetur consequatur cupiditate distinctio dolore doloremque, doloribus ducimus, earum excepturi, illum mollitia rerum sed sit tenetur.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="http://cdn.bootcss.com/tether/1.3.7/js/tether.min.js"></script>
+<!--导入bootstrap.js-->
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+</body>
+</html>

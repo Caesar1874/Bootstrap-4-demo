@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br><br>
+<!--tooltip-->
+    <!--tooltip必须进行初始化-->
+
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" title="Tooltip">Tooltip on top</button>
+
+    <!--指定位置， 默认top-->
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip">Tooltip on left</button>
+    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip">Tooltip on bottom</button>
+    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip">Tooltip on right</button>
+    <!--custom tooltip-->
+    <button class="btn btn-secondary" data-toggle="tooltip" data-placement="right" data-html="true" title="<u>Tooltip</u>">
+        Custom tooltip
+    </button>
+
+
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="http://cdn.bootcss.com/tether/1.3.7/js/tether.min.js"></script>
+<!--导入bootstrap.js-->
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+</body>
+</html>

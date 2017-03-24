@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<!--导航-->
+    <!--.active: 激活-->
+    <!--.disabled: 禁用-->
+
+    <!--垂直导航-->
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+
+    <!--水平导航-->
+    <nav class="nav">
+        <a href="#" class="nav-link active">active Link</a>
+        <a href="#" class="nav-link">Link</a>
+        <a href="#" class="nav-link">Link</a>
+        <a href="#" class="nav-link disabled">disabled Link</a>
+    </nav>
+
+<br><br><br>
+
+<!--inline nav-->
+    <!--nav-inline本身无样式-->
+    <nav class="nav nav-inline">
+        <a href="#" class="nav-link active">active inline</a>
+        <a href="#" class="nav-link">inline</a>
+        <a href="#" class="nav-link disabled"> disabled inline</a>
+    </nav>
+
+    <ul class="nav nav-inline">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">active inline</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">inline</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">inline Disabled</a>
+        </li>
+    </ul>
+
+<br><br><br>
+
+<!--tabs-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Active tab</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">tab</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">tab</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled tab</a>
+        </li>
+    </ul>
+
+<br><br><br>
+
+<!--pills-->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Active pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link active">pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled pill</a>
+        </li>
+    </ul>
+
+
+<!--垂直pills-->
+    <ul class="nav nav-pills nav-stacked">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Active stacked pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">stacked pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">stacked pill</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled stacked pill</a>
+        </li>
+    </ul>
+
+<br><br><br>
+<!--tabs with dropdown-->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#" class="nav-link active">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            dropdown tab
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">item 1</a>
+                <a href="#" class="dropdown-item">item 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">item 3</a>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">tab</a>
+    </li>
+</ul>
+
+<!--pills with dropdown-->
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="#" class="nav-link active">active pill</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+            dropdown pill
+        </a>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">item 1</a>
+            <a href="#" class="dropdown-item">item 2</a>
+        </div>
+    </li>
+</ul>
+
+<br><br><br>
+
+<!--完整的tabs-->
+<!--
+.nav.nav-tabs
+    .nav-item
+        .nav-link[data-toggle=tab]
+.tab-content
+    .tab-pane
+    -->
+
+<!--tab添加data-toggle="tab", href绑定tab pane-->
+<!--active要同时添加到tab和tab pane-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a href="#home" class="nav-link active" data-toggle="tab">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#profile" class="nav-link" data-toggle="tab">Profile</a>
+        </li>
+        <li class="nav-item disabled">
+            <a href="#message" class="nav-link disabled" data-toggle="tab">Message</a>
+        </li>
+        <li class="nav-item">
+            <a href="#setting" class="nav-link" data-toggle="tab">Setting</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active in fade" id="home">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequatur cumque hic impedit magni molestias quidem quo, totam? Ab ad delectus inventore molestiae nam, quasi!
+        </div>
+        <div class="tab-pane fade" id="profile">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, est excepturi facilis neque nobis numquam odio provident quas quidem reprehenderit. Distinctio dolore laudantium repellat voluptate?
+        </div>
+        <div class="tab-pane fade" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corporis dignissimos distinctio, dolorem earum excepturi ipsam ipsum, molestiae odio officia omnis porro ratione repudiandae sequi!
+        </div>
+        <div class="tab-pane fade" id="seting">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam dignissimos ducimus est expedita id, maiores, minima nam quo reprehenderit sint tenetur. Ea minus, quisquam.
+        </div>
+    </div>
+
+<br><br><br><br>
+
+<!--效果-->
+<!--为tab pane 添加 .fade, active tab pane还要添加.in-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="http://cdn.bootcss.com/tether/1.3.7/js/tether.min.js"></script>
+<!--导入bootstrap.js-->
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+</body>
+</html>

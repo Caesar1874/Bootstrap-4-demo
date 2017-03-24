@@ -1,0 +1,113 @@
+
+/*button*/
+    .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.25;
+        cursor: pointer;
+        /*不能选中*/
+        user-select: none;
+    }
+    .btn:hover {
+        text-decoration: none;
+    }
+    .btn:focus,
+    .btn.focus {
+        text-decoration: none;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+
+    /*active*/
+    .btn:active,
+    .btn.active {
+        background-image: none;
+        outline: 0;
+    }
+    .btn:active:focus,
+    .btn:active.focus,
+    .btn.active:focus,
+    .btn.active.focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    /*disabled*/
+    .btn.disabled,
+    .btn:disabled {
+        cursor: not-allowed;
+        opacity: 0.65;
+    }
+
+/* btn-<style> */
+    .btn-primary {
+        color: #fff;
+        background-color: #0275d8;
+        border-color: #0275d8;
+    },
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: #fff;
+        background-color: #025aa5;
+        border-color: #01549b;
+    }
+    /*active */
+    .btn-primary:active,
+    .btn-primary.active {
+        color: #ffff;
+        background-color: #025aa5;
+        border-color: #01549b;
+        background-image: none;
+    }
+    .btn-primary:active:hover,
+    .btn-primary:active:focus,
+    .btn-primary:active.focus,
+    .btn-primary.active:hover,
+    .btn-primary.active:focus,
+    .btn-primary.active.focus {
+        color: #fff;
+        background-color: #014682;
+        border-color: #01315a;
+    }
+    /*disabled*/
+    .btn-primary.disabled:focus,
+    .btn-primary.disabled.focus,
+    .btn-primary:disabled:focus,
+    .btn-primary:disabled.focus,
+    .btn-primary.disabled:hover,
+    .btn-primary:disabled:hover {
+        background-color: #0275d8;
+        border-color: #0275d8;
+    }
+
+/*btn-<size>*/
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        border-radius: 0.3rem;
+    }
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        border-radius: 0.2rem;
+    }
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+    .btn-block + .btn-block {
+        margin-top: 0.5rem;
+    }
+
+
+    a.btn.disabled,
+    fieldset[disabled] a.btn {
+        pointer-events: none;
+    }

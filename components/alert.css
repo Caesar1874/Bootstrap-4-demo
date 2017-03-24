@@ -1,0 +1,64 @@
+/*alert*/
+    .alert {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert-link {
+        font-weight: bold;
+    }
+
+/*dismiss alert*/
+    .alert-dismissible {
+        padding-right: 2.5rem;
+    }
+
+/*.close*/
+    .close {
+        float: right;
+        color: #000;
+        text-shadow: 0 1px #fff;
+        line-height: 1;
+        font-size: 1.5rem;
+        font-weight: bold;
+        opacity: 0.2;
+    }
+    .close:focus,
+    .close:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    button.close {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        -webkit-appearence: none;
+    }
+
+    .alert-dismissible .close {
+        position: relative;
+        top: -0.125rem;
+        right: -1.25rem;
+        color: inherit;
+    }
+    
+/*样式*/
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d0e9c6;
+        color: #3c763d;
+    }
+    .alert-success hr {
+        border-top-color: #c1e2b3;
+    }
+
+    .alert-success .alert-link {
+        color: #2b542c;
+    }

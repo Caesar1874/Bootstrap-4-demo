@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+<body>
+<!--btn-->
+    <butotn class="btn" type="button">button</butotn>
+    <butotn class="btn active" type="button">active button</butotn>
+    <butotn class="btn disabled" type="button">disabled button</butotn>
+    <br>
+    <br>
+
+<!-- btn-<style> -->
+    <button class="btn btn-primary" type="button">Primary</button>
+    <button class="btn btn-secondary" type="button">Secondary</button>
+    <button class="btn btn-success" type = "button">Success</button>
+    <button class="btn btn-info" type="button">Info</button>
+    <button class="btn btn-warning" type="button">Warning</button>
+    <button class="btn btn-danger" type="button">Danger</button>
+    <button class="btn btn-link" type="link">Link</button>
+    <br>
+    <br>
+
+<!--.btn可以用于a或input-->
+    <a href="#" class="btn btn-primary">Link</a>
+    <button class="btn btn-primary" type="submit">Button</button>
+    <input class="btn btn-primary" type="button" value="Input">
+    <input type="submit" class="btn btn-primary" value="Submit">
+    <input type="reset" class="btn btn-primary" value="Reset">
+<a href="#" class="btn">a as button</a>
+    <br><br>
+
+<!--outline button-->
+    <button class="btn btn-outline-primary">Primary</button>
+    <button class="btn btn-outline-secondary">Secondary</button>
+    <button class="btn btn-outline-success">Success</button>
+    <button class="btn btn-outline-info">Info</button>
+    <button class="btn btn-outline-warning">Waring</button>
+    <button class="btn btn-outline-danger">Danger</button>
+
+    <br><br>
+
+<!--按钮尺寸-->
+    <button class="btn btn-primary btn-lg">Large button</button>
+    <button class="btn btn-primary btn-sm">Small button</button>
+    <button class="btn btn-primary btn-block">Block level button</button>
+    <button class="btn btn-primary btn-block">Block level button</button>
+
+<!--按钮状态-->
+    <!--按钮的active状态实际中是伪类， 使用.active预选中-->
+        <button class="btn btn-primary active">active button</button>
+    <!--按钮的disabled状态： disabled布尔属性-->
+        <button class="btn btn-primary" disabled = "disabled">Disabled button</button>
+    <!--a不支持disabled属性，使用.disabled-->
+    <a href="#" class="btn btn-primary disabled">Disabled link</a>
+
+<!--按钮插件-->
+<!--data-toggle="button" -->
+    <button class="btn btn-primary " type="button" data-toggle="button">
+       toggle
+    </button>
+
+<!--checkbox和radio作为按钮-->
+    <!--添加data-toggle="buttons"checkbox和radio(他们的label)才能变成按钮-->
+    
+    <!--checkbox-->
+    <div class="btn-group" data-toggle="buttons">
+        <label for="" class="btn btn-primary active">
+            <input type="checkbox" name="" id="" checked="checked" autocomplete = "off">
+            Checkbox 1 (pre-checked)
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="checkbox">
+            Checkebox 2
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="checkbox" name="" id="">
+            Checkbox 3
+        </label>
+    </div>
+    <!--radio-->
+    <div class="btn-group" data-toggle="buttons">
+        <label for="" class="btn btn-primary">
+            <input type="radio" name="" id="">
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="radio" name="" id="">
+        </label>
+    </div>
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+<!--导入bootstrap.js-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+</body>
+</html>

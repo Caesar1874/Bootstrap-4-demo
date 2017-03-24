@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta标签-->
+    <meta charset="UTF-8">
+    <!--这两行是什么意思-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>bootstrap document</title>
+
+    <!--在其他样式表之前导入bootstrap.css-->
+    <link href="bootstrap.css" rel="stylesheet">
+    <style>
+        .float-xs-right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<br><br><br><br>
+<!--navbar    -->
+
+<!--
+.navbar.navbar-<style>
+    .navbar-brand
+    .navbar-divider
+    .navbar-nav
+    .navbar-text
+    .form-inline
+    .navbar-toggler
+
+-->
+    <nav class="navbar navbar-light bg-faded">
+        <a href="#" class="navbar-brand">Navbar brand</a>
+        <div class="navbar-divider"></div>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+        </ul>
+        <div class="navbar-divider"></div>
+        <button class="navbar-toggler btn btn-secondary" data-toggle="collapse" data-target="#navbarToggler"></button>
+        <div class="collapse" id="navbarToggler">
+            <div class="bg-inverse text-muted">
+                <h4>Lorem ipsum dolor.</h4>
+                <span class="text-muted">Lorem ipsum dolor sit amet.</span>
+            </div>
+        </div>
+
+        <form action="" class="form-inline float-xs-right">
+            <input type="text" name="" id="" class="form-control" placeholder="Search">
+            <button type="submit" class="btn btn-success">Search</button>
+        </form>
+        <div class="navbar-divider float-xs-right"></div>
+        <div class="navbar-text float-xs-right">navbarText</div>
+    </nav>
+
+
+<br><br><br><br>
+<!--navbar-toggler-->
+<nav class="navbar navbar-dark bg-inverse">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar"></button>
+    <div class="collapse" id="collapseNavbar">
+        <div class="bg-inverse text-muted p-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium enim facere fuga fugit nisi, perferendis quisquam tenetur? Aspernatur eveniet exercitationem facere facilis provident quibusdam vitae.
+        </div>
+    </div>
+</nav>
+
+<br><br><br><br>
+<!--.nav-brand-->
+    <!--作为链接-->
+    <nav class="navbar navbar-light bg-faded">
+        <a href="#" class="navbar-brand">Navbar</a>
+    </nav>
+    <!--作为标题-->
+    <nav class="navbar navbar-light bg-faded">
+        <h1 class="navbar-brand">Navbar</h1>
+    </nav>
+
+<!--.nav-brand中包含图片-->
+    <nav class="navbar navbar-light bg-faded">
+        <a href="#" class="navbar-brand">
+            <img src="small.png" alt="" width="30" height="30">
+        </a>
+    </nav>
+
+    <nav class="navbar navbar-light bg-faded">
+        <a href="#" class="navbar-brand">
+            <img src="small.png" alt="" width="30" height="30">
+            navbar-brand
+        </a>
+    </nav>
+
+<!--.navbar-nav-->
+    <!--可以进一步结合dropdown-->
+    <nav class="navbar navbar-light bg-faded">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+        </ul>
+    </nav>
+
+<!--.form-inline-->
+    <nav class="navbar navbar-light bg-faded">
+        <form action="" class="form-inline float-xs-left">
+            <input type="text" name="" id="" class="form-control" placeholder="Search">
+            <button type="submit" class="btn btn-outline-success">Search</button>
+        </form>
+    </nav>
+
+<!--.navbar-text-->
+    <nav class="navbar navbar-light bg-faded">
+        <span class="navbar-text">
+            Lorem ipsum dolor sit.
+        </span>
+    </nav>
+
+<!--navbar颜色-->
+    <!--navbar-light或navbar-dark改变后代的样式，bg-color改变navbar背景-->
+    <nav class="navbar navbar-light bg-faded">
+        <span class="navbar-text">
+           navbar navbar-light bg-faded
+        </span>
+    </nav>
+    <nav class="navbar navbar-dark bg-inverse">
+        <span class="navbar-text">
+            navbar navbar-dark bg-inverse
+        </span>
+    </nav>
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-text">
+            navbar navbar-dark bg-primary
+        </span>
+    </nav>
+
+<!--navbar placement-->
+    <!--无圆角-->
+    <nav class="navbar navbar-dark bg-inverse navbar-full">
+        <a href="#" class="navbar-brand">Full width</a>
+    </nav>
+    <!--fixed top-->
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
+        <a href="#" class="navbar-brand">Fixed top</a>
+    </nav>
+    <!--fixed bottom-->
+    <nav class="navbar navbar-dark bg-inverse navbar-fixed-bottom">
+        <a href="#" class="navbar-brand">Fixed bottom</a>
+    </nav>
+
+
+<!--使用bootstrap必须按顺序导入以下文件，以及head中的bootstrap.css-->
+<!--导入jQuery-->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<!--导入tether-->
+<script src="http://cdn.bootcss.com/tether/1.3.7/js/tether.min.js"></script>
+<!--导入bootstrap.js-->
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+</body>
+</html>

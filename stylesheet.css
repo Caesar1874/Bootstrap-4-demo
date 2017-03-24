@@ -1,0 +1,262 @@
+/*layout样式*/
+/*容器*/
+    /*.container*/
+    @media (min-width: 1200px)
+    .container {
+        max-width: 114px;
+    }
+
+    @media (min-width: 992px)
+    .container {
+        max-width: 940px;
+    }
+    @media (min-width: 768px)
+    .container {
+        max-width: 720px;
+    }
+
+    @media (min-width: 544px)
+        .container {
+            max-width: 576px;
+        }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*.container-fluid*/
+    .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /*行*/
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    @media (min-width: 768px)
+    .col-md-1 {
+        float: left;
+        width: 8.333333%;
+
+        /*.col-<size>-<number>共有的属性*/
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+   /*.col-<size>-<number>类的区别在于width, 也就是占全部12列的比例 */
+
+/*media object*/
+.media {
+    overflow: hidden;
+}
+.media-left {
+    padding-right: 10px;
+
+    /*.media-left, .media-right, .media-body*/
+    display: table-cell;
+    vertical-align: top;
+}
+.media-object {
+    display: block;
+}
+.media-body {
+    width: 10000px;
+
+    display: tabel-cell;
+    vertical-align: top;
+}
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+/*button样式*/
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1 rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background-color: buttonface;
+    color: buttontext;
+    line-height: 1.25;
+    text-aling: cneter;
+    font-weight: 400;
+    font-size: 1rem;
+    word-spacing: nowrap;
+    cursor: pointer;
+    align-items: flex-start;
+
+}
+
+/*image样式*/
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0.25em;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+/*Forms*/
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgbs(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.col-form-label {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+/*.form-inline本身无样式*/
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+.form-check-label {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.form-check-input {
+    position: absolute;
+    margin-top: 0.25rem;
+    margin-left: -1.25rem;
+}
+.form-check-input:only-child {
+    position: static;
+}
+
+.form-text {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.text-muted {
+    color: #818a91 !important;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25em, 0.4em;
+    border-radius: 0.25rem;
+    color: #fff;
+    text-align: center;
+    vertical-align: baseline;
+    ling-height: 1;
+    font-size: 75%;
+    font-weight: 700;
+}
+.tag-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+/*.tag-default等只是改变背景颜色*/
+
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+
+.jumbotron {
+    /*随媒体查询变化*/
+    padding: 2rem 1rem;
+
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-radius: 0.3rem;
+}
+.display-3 {
+    font-size: 4.5rem;
+    font-weigth: 300;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (min-width: 544px)
+    .nav {
+        border-radius: 0.25rem;
+    }
+.navbar {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+}
+.navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    bottom: 0;
+}
+.navbar-light {
+    ;
+}
+.navbar-dark {
+    ;
+}
